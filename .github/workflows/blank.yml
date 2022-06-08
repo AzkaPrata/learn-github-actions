@@ -8,7 +8,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: apt upgrade
-      - run: apt install sudo
+      - run: sudo apt update
       - run: sudo apt install neofetch
-      - run: neofetch
+      - run: sudo neofetch
